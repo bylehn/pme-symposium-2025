@@ -4,11 +4,8 @@ layout: cover
 class: text-white
 transition: fade
 fonts:
-  # basically the text
   sans: DM Sans
-  # use with `font-serif` css class from UnoCSS
   serif: Robot Slab
-  # for code blocks, inline code, etc.
   mono: Fira Code
 hideInToc: true
 coverAuthor1: Fabian Byléhn
@@ -40,7 +37,6 @@ info: |
 <h2 style="max-width: 70%">When Materials Break the Rules:</h2>
 Engineering Networks That Control Both Shape and Sound
 
-<!-- Add authors manually here -->
 <div class="absolute bottom-25 left-14 right-0 text-left">
   <p class="text-l">
     <a href="https://pme.uchicago.edu/" class="text-white hover:underline">Fabian Byléhn</a><sup>1</sup>, 
@@ -91,23 +87,23 @@ hideInToc: true
 ---
 
 <!--
-Here's what we'll cover in the next 12 minutes. We'll start with why these impossible materials matter, then dive into our AI-powered solution, and finish with real-world applications that could transform multiple industries.
+Here's what we'll cover in the next 12 minutes. Let's start with understanding what makes these materials special.
 -->
 
 ---
-src: ./pages/introduction.md
+src: ./pages/challenge.md
 ---
 
 ---
-src: ./pages/approach-page.md
+src: ./pages/applications.md
 ---
 
 ---
-src: ./pages/results-page.md
+src: ./pages/approach.md
 ---
 
 ---
-src: ./pages/applications-page.md
+src: ./pages/results.md
 ---
 
 ---
@@ -116,17 +112,34 @@ src: ./pages/conclusions.md
 
 ---
 hideInToc: true
-layout: figure
-figureCaption: The future of programmable materials
-figureFootnoteNumber: 1
-figureUrl: /images/future-materials.jpg
+layout: center
+class: text-center
 ---
 
-# Questions?
+# Thank You!
 
-<Footnotes separator>
-  <Footnote :number=1>Visualization of adaptive metamaterial network</Footnote>
-</Footnotes>
+<div class="text-2xl mb-8">Questions?</div>
+
+<div class="grid grid-cols-3 gap-8 mt-8 max-w-3xl mx-auto">
+  <div>
+    <div class="text-4xl mb-4">💻</div>
+    <a href="https://github.com/bylehn/saxophone" target="_blank" class="text-blue-600 hover:text-blue-800">
+      github.com/bylehn/saxophone
+    </a>
+  </div>
+  
+  <div>
+    <div class="text-4xl mb-4">📧</div>
+    <a href="mailto:fbylehn@uchicago.edu" class="text-blue-600 hover:text-blue-800">
+      fbylehn@uchicago.edu
+    </a>
+  </div>
+  
+  <div>
+    <div class="text-4xl mb-4">🌐</div>
+    <p class="text-gray-600">pme.uchicago.edu</p>
+  </div>
+</div>
 
 <!--
 Thank you for your attention! I'm happy to answer any questions about our work on programmable metamaterials.
