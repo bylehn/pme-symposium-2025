@@ -4,7 +4,7 @@ layout: cover
 class: text-white
 transition: fade
 fonts:
-  sans: DM Sans
+  sans: Plus Jakarta Sans
   serif: Robot Slab
   mono: Fira Code
 hideInToc: true

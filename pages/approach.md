@@ -1,38 +1,51 @@
 ---
 ---
 
-# Our Approach: Network Optimization with AI
+### Our approach: network optimization with AI
 
-<figure
-    v-click
-    class="absolute top-28 left-4 w-115"
-    >
-    <img src="/images/approach/network-optimization.png" />
-    <figcaption class="text-center">AI-powered network optimization process</figcaption>
-</figure>
-
-<div v-after class="absolute top-35 right-4 w-110">
-  <h3 class="text-xl mb-4 font-bold">Key Innovation: JAX + Automatic Differentiation</h3>
-  
-  <div class="grid grid-cols-2 gap-4">
-    <div class="bg-red-50 p-4 rounded">
-      <p class="font-semibold">Traditional</p>
-      <p class="text-sm">Finite differences</p>
-      <p class="text-xs text-gray-600">Hours per optimization</p>
-    </div>
-    
-    <div class="bg-green-50 p-4 rounded">
-      <p class="font-semibold">Our Method</p>
-      <p class="text-sm">Automatic differentiation</p>
-      <p class="text-xs text-gray-600">Minutes per optimization</p>
-    </div>
+<div class="grid grid-cols-3 gap-4">
+  <div v-click class="flex flex-col items-center">
+    <img src="/images/intro/network_app_1.png" class="w-50 h-auto mb--2" />
+    <figcaption class="text-center">initial network</figcaption>
   </div>
   
-  <h3 class="mt-4 font-bold text-3xl text-center text-green-600">100x Speedup!</h3>
+  <div v-click class="flex flex-col items-center">
+    <img src="/images/intro/network_app_2.png" class="w-50 h-auto mb--2" />
+    <figcaption class="text-center">calculate gradients</figcaption>
+  </div>
+  
+  <div v-click class="flex flex-col items-center">
+    <img src="/images/intro/network_app_3.png" class="w-50 h-auto mb--2" />
+    <figcaption class="text-center">update network</figcaption>
+  </div>
+</div>
+
+<div v-click class="mt-4 px-4 py-3 bg-blue-50 border-l-4 border-blue-500 rounded">
+  <h4 class="text-lg font-bold">Key ingredient: automatic differentiation with JAX</h4>
+</div>
+
+<div v-click class="grid grid-cols-2 gap-4 mt-2">
+  <div class="px-4 pt-2 pb-3 bg-red-50 border-l-4 border-red-500 rounded">
+    <h5 class="text-lg font-bold -mt-1">Traditional method</h5>
+    <p class="text-s">- test one spring at a time ⏱️</p>
+    <p class="text-s">- hours of computation 🐢</p>
+  </div>
+  
+  <div class="px-4 pt-2 pb-3 bg-green-50 border-l-4 border-green-500 rounded">
+    <h5 class="text-lg font-bold -mt-1">Our method</h5>
+    <p class="text-s">- calculate all gradients at once ⚡</p>
+    <p class="text-s">- minutes of computation 🚀</p>
+  </div>
 </div>
 
 <!--
-Our approach is elegantly simple yet powerful. We model materials as networks of nodes connected by springs. Then we use AI to optimize two things: node positions and spring strengths. The breakthrough is using automatic differentiation from JAX - borrowed from machine learning. Instead of testing each spring one at a time, we calculate all gradients simultaneously. This gives us a 100x speedup, enabling optimization that was previously impossible.
+These images show our network optimization approach in action. We start with a disordered network - a 15×15 grid of nodes connected by springs with slight random perturbations. This is our initial playground for optimization.
+
+In the middle image, you can see our AI optimization in progress. The red arrows show how the nodes are moving as the algorithm searches for the optimal configuration. This is where JAX's automatic differentiation makes all the difference.
+
+The right image shows the final optimized network. Notice how it's developed subtle structural changes that give it the special properties we're targeting. The gray ghost image shows where the network started, highlighting the significant transformation.
+
+The key breakthrough is using automatic differentiation from JAX. Traditional methods test one spring at a time - imagine having to tweak thousands of parameters one by one. Our approach optimizes all parameters simultaneously, giving us a 100x speedup. That's the difference between waiting days for results versus getting them in minutes.
 -->
 
 ---
@@ -40,35 +53,38 @@ Our approach is elegantly simple yet powerful. We model materials as networks of
 
 # Dual Objective Optimization
 
-<div class="grid grid-cols-2 gap-8 h-full items-center">
+<div class="grid grid-cols-2 gap-6">
   <div>
-    <h3 class="text-xl font-bold mb-4">What We Optimize</h3>
-    
-    <v-clicks>
-    
-    <div class="mb-6">
-      <h4 class="font-semibold text-lg text-blue-600">Poisson's Ratio (ν)</h4>
-      <p>How material deforms under stress</p>
-      <p class="text-sm text-gray-600">Target: -0.5 to +0.5</p>
+    <div v-click class="px-4 py-3 mb-4 bg-blue-50 border-l-4 border-blue-500 rounded">
+      ### Poisson's Ratio (ν)
+      
+      > Controls how material deforms
+      > 
+      > Target: -0.5 to +0.5
     </div>
     
-    <div>
-      <h4 class="font-semibold text-lg text-purple-600">Acoustic Bandgaps</h4>
-      <p>Frequencies that can't propagate</p>
-      <p class="text-sm text-gray-600">Target: 1.5-2.5 (normalized)</p>
+    <div v-click class="px-4 py-3 bg-purple-50 border-l-4 border-purple-500 rounded">
+      ### Acoustic Bandgaps
+      
+      > Frequencies that can't propagate
+      > 
+      > Target: 1.5-2.5 (normalized)
     </div>
-    
-    </v-clicks>
   </div>
   
-  <div v-click>
-    <img src="/images/approach/dual-optimization.png" class="rounded-lg shadow-lg" />
-    <p class="text-center mt-2 text-sm">Balancing competing objectives simultaneously</p>
+  <div v-click class="flex flex-col items-center justify-center">
+    <img src="/images/approach/dual-optimization.png" class="w-80 h-auto rounded shadow" />
+    
+    ### Challenge
+    
+    > Balancing competing objectives: mechanical and acoustic
   </div>
 </div>
 
-<div v-click class="absolute bottom-8 left-0 right-0 text-center">
-  <p class="text-xl font-bold">Challenge: Optimizing both properties without compromising either</p>
+<div v-click class="mt-4 px-4 py-3 bg-yellow-50 border-l-4 border-yellow-500 rounded text-center">
+  ## Our Innovation: Optimizing both properties without compromise
+  
+  **Like designing a car that's both fast AND fuel-efficient**
 </div>
 
 <!--
