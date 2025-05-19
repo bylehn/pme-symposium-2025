@@ -48,43 +48,40 @@ The right image shows the final optimized network. Notice how it's developed sub
 The key breakthrough is using automatic differentiation from JAX. Traditional methods test one spring at a time - imagine having to tweak thousands of parameters one by one. Our approach optimizes all parameters simultaneously, giving us a 100x speedup. That's the difference between waiting days for results versus getting them in minutes.
 -->
 
+
+
 ---
 ---
 
-# Dual Objective Optimization
+### Dual optimization
 
-<div class="grid grid-cols-2 gap-6">
-  <div>
-    <div v-click class="px-4 py-3 mb-4 bg-blue-50 border-l-4 border-blue-500 rounded">
-      ### Poisson's Ratio (ν)
-      
-      > Controls how material deforms
-      > 
-      > Target: -0.5 to +0.5
-    </div>
-    
-    <div v-click class="px-4 py-3 bg-purple-50 border-l-4 border-purple-500 rounded">
-      ### Acoustic Bandgaps
-      
-      > Frequencies that can't propagate
-      > 
-      > Target: 1.5-2.5 (normalized)
-    </div>
-  </div>
-  
-  <div v-click class="flex flex-col items-center justify-center">
-    <img src="/images/approach/dual-optimization.png" class="w-80 h-auto rounded shadow" />
-    
-    ### Challenge
-    
-    > Balancing competing objectives: mechanical and acoustic
-  </div>
-</div>
+<div grid="~ cols-2 gap-2" m="t-2">
 
-<div v-click class="mt-4 px-4 py-3 bg-yellow-50 border-l-4 border-yellow-500 rounded text-center">
-  ## Our Innovation: Optimizing both properties without compromise
+  <h5 class="font-bold text-lg text-center">Auxetic</h5>
+
+  <h5 class="font-bold text-lg text-center">Acoustic</h5>
+
+  <div v-click grid="~ cols-2 gap-2" m="t--2">
   
-  **Like designing a car that's both fast AND fuel-efficient**
+  <img src="/images/results/auxetic.gif" class="w-100 h-auto mt-0" />
+
+  <img src="/images/results/auxetic_curve.png" class="w-90 h-auto mt-3" />
+  </div>
+
+  <div v-click="3" grid="~ cols-2 gap-2" m="t--2">
+  <img src="/images/results/acoustic_network.gif" class="w-100 h-auto mt-0" />
+
+  <img src="/images/results/acoustic_dos.gif" class="w-100 h-auto mt-0" />  
+  </div>
+
+  <img v-click="2" src="/images/results/auxetic_comp.png" class="w-100 h-auto mb--2 ml-4" />
+
+  <div v-click="4" grid="~ cols-2 gap-2" m="t-2">
+  <img src="/images/results/acoustic_network.png" class="w-auto h-65% mt-4 ml-7" />
+
+  <img src="/images/results/acoustic_compressed.png" class="w-90% h-auto mt-4" />
+  </div>
+
 </div>
 
 <!--
