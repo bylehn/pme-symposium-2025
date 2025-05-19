@@ -65,7 +65,7 @@ The key breakthrough is using automatic differentiation from JAX. Traditional me
   
   <img src="/images/results/auxetic.gif" class="w-100 h-auto mt-0" />
 
-  <img src="/images/results/auxetic_curve.png" class="w-90 h-auto mt-3" />
+  <img src="/images/results/auxetic_curve.png" class="w-90 h-auto mt-4" />
   </div>
 
   <div v-click="3" grid="~ cols-2 gap-2" m="t--2">
@@ -79,7 +79,7 @@ The key breakthrough is using automatic differentiation from JAX. Traditional me
   <div v-click="4" grid="~ cols-2 gap-2" m="t-2">
   <img src="/images/results/acoustic_network.png" class="w-auto h-65% mt-4 ml-7" />
 
-  <img src="/images/results/acoustic_compressed.png" class="w-90% h-auto mt-4" />
+  <img src="/images/results/acoustic_compressed.png" class="w-95% h-auto mt-4" />
   </div>
 
 </div>
