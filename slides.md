@@ -116,31 +116,45 @@ layout: center
 class: text-center
 ---
 
-# Thank You!
+# Acknowledgments
 
-<div class="text-2xl mb-8">Questions?</div>
-
-<div class="grid grid-cols-3 gap-8 mt-8 max-w-3xl mx-auto">
-  <div>
-    <div class="text-4xl mb-4">💻</div>
-    <a href="https://github.com/bylehn/saxophone" target="_blank" class="text-blue-600 hover:text-blue-800">
-      github.com/bylehn/saxophone
-    </a>
+<div bg="blue-50" p="4" rounded shadow m="b-6 t-4">
+  <h3 text="blue-800" m="b-2">Co-Authors</h3>
+  
+  <div m="b-2">
+    <span text="lg font-bold">Abhishek K. Sharma, PhD</span> • 
+    <span text="lg font-bold">Cesar A. Castro Rubio</span> • 
+    <span text="lg font-bold">Juan J. de Pablo, PhD</span>
   </div>
   
-  <div>
-    <div class="text-4xl mb-4">📧</div>
-    <a href="mailto:fbylehn@uchicago.edu" class="text-blue-600 hover:text-blue-800">
-      fbylehn@uchicago.edu
-    </a>
-  </div>
+  <div text="gray-600 sm">Cooper Union • University of Chicago • New York University</div>
+</div>
+
+<div bg="green-50" p="4" rounded shadow m="b-6">
+  <h3 text="green-800" m="b-2">Research Support</h3>
   
-  <div>
-    <div class="text-4xl mb-4">🌐</div>
-    <p class="text-gray-600">pme.uchicago.edu</p>
+  <div>Pritzker School of Molecular Engineering • De Pablo Research Group</div>
+  <div text="gray-600 sm" m="t-2">This work was supported by NSF grant #XXXX</div>
+</div>
+
+<div m="t-6">
+  <h2 text="2xl" m="b-4">Thank You!</h2>
+  
+  <div flex="~ gap-4" justify="center">
+    <a href="https://github.com/bylehn/saxophone" bg="blue-50" p="2" rounded hover:bg="blue-100">
+      <carbon:logo-github class="text-xl mr-1 inline" /> bylehn/saxophone
+    </a>
+    
+    <a href="mailto:fbylehn@uchicago.edu" bg="green-50" p="2" rounded hover:bg="green-100">
+      <carbon:email class="text-xl mr-1 inline" /> fbylehn@uchicago.edu
+    </a>
   </div>
 </div>
 
 <!--
-Thank you for your attention! I'm happy to answer any questions about our work on programmable metamaterials.
+I want to thank my co-authors for their invaluable contributions to this work. Abhishek brought expertise in materials optimization, Cesar helped develop the computational framework, and Professor de Pablo provided guidance throughout the project.
+
+I'm also grateful to the entire De Pablo research group and the Pritzker School of Molecular Engineering for supporting this research.
+
+Thank you for your attention! I'm happy to answer any questions.
 -->

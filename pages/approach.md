@@ -87,3 +87,11 @@ The key breakthrough is using automatic differentiation from JAX. Traditional me
 <!--
 The real magic happens when we optimize for both properties simultaneously. We want a specific Poisson's ratio - how the material deforms - AND acoustic bandgaps - frequencies that can't pass through. It's like designing a car that's both fast AND fuel-efficient. Our algorithm balances these competing objectives through a clever loss function that minimizes deviation from both targets.
 -->
+
+---
+layout: center
+---
+
+1. Can we optimize for both properties simultaneously?
+
+2. What are the benefits, if any, with auxetic networks on bandgap creation?
