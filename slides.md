@@ -16,7 +16,7 @@ coverAuthorUrl1: https://pme.uchicago.edu/
 coverAuthorUrl2: https://cooper.edu/
 coverAuthorUrl3: https://pme.uchicago.edu/
 coverAuthorUrl4: https://pme.uchicago.edu/
-
+coverBackgroundUrl: /images/cover_v2.png
 coverBackgroundSource: Background image created with ChatGPT
 coverBackgroundSourceUrl: https://chatgpt.com
 coverDate: May 22, 2025
