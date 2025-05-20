@@ -34,14 +34,6 @@ info: |
   - [Contact](mailto:fbylehn@uchicago.edu)
 ---
 
-<style>
-.slidev-layout.cover {
-  background-image: url('./images/cover_v2.png');
-  background-size: cover;
-  background-position: center;
-}
-</style>
-
 <h2 style="max-width: 70%">When Materials Break the Rules:</h2>
 Engineering Networks That Control Both Shape and Sound
 
