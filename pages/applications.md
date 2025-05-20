@@ -1,7 +1,7 @@
 ---
 ---
 
-### real-world applications: transforming industries
+### Real-world applications: transforming industries
 
 <br>
 <br>

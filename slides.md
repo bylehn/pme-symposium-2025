@@ -64,7 +64,7 @@ Engineering Networks That Control Both Shape and Sound
 </div>
 
 <div class="abs-tr mx-16 my-6 flex gap-2">
-  <a href="/slides-export.pdf" target="_blank" alt="Slides"
+  <a href="https://bylehn.github.io/pme-symposium-2025" target="_blank" alt="Slides"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-presentation-file />
   </a>
