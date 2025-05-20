@@ -112,49 +112,46 @@ src: ./pages/conclusions.md
 
 ---
 hideInToc: true
-layout: center
-class: text-center
 ---
 
-# Acknowledgments
+### Acknowledgments
 
-<div bg="blue-50" p="4" rounded shadow m="b-6 t-4">
-  <h3 text="blue-800" m="b-2">Co-Authors</h3>
-  
-  <div m="b-2">
-    <span text="lg font-bold">Abhishek K. Sharma, PhD</span> • 
-    <span text="lg font-bold">Cesar A. Castro Rubio</span> • 
-    <span text="lg font-bold">Juan J. de Pablo, PhD</span>
+<div grid="~ cols-2 gap-2" m="t-2">
+
+  <div float="center" w="100%" h="100%" bg="blue-50" p="4" rounded-lg shadow m="r-4">
+    <h5 text="blue-800 xl" m="b-2">Co-Authors</h5>
+    <p m="b-1"><span text="lg font-bold">Abhishek Sharma, PhD</span> <span text="gray-600 sm">(Cooper Union)</span></p>
+    <p m="b-1"><span text="lg font-bold">Cesar Castro Rubio</span> <span text="gray-600 sm">(UChicago)</span></p>
+    <p><span text="lg font-bold">Prof. Juan de Pablo </span> <span text="gray-600 sm">(UChicago & NYU)</span></p>
   </div>
-  
-  <div text="gray-600 sm">Cooper Union • University of Chicago • New York University</div>
+
+  <div float="right" w="100%" h="100%" bg="green-50" p="4" rounded-lg shadow>
+    <h5 text="green-800 xl" m="b-2">SaXoPhone Package</h5>
+    <p m="b-2" text="lg">
+      <span font="bold">S</span>imulation of 
+      <span font="bold">A</span>u<span font="bold">X</span>etics and 
+      Ph<span font="bold">O</span>no<span font="bold">N</span>ics 
+    </p>
+    <p><carbon:code class="inline" /> Open-source Python with JAX</p>
+    <p text="left" m="t-4">
+      <a href="https://github.com/bylehn/saxophone" bg="white" p="2" rounded shadow>
+        <carbon:logo-github class="text-xl mr-1 inline" /> github.com/bylehn/saxophone
+      </a>
+    </p>
+  </div>
 </div>
 
-<div bg="green-50" p="4" rounded shadow m="b-6">
-  <h3 text="green-800" m="b-2">Research Support</h3>
-  
-  <div>Pritzker School of Molecular Engineering • De Pablo Research Group</div>
-  <div text="gray-600 sm" m="t-2">This work was supported by NSF grant #XXXX</div>
-</div>
-
-<div m="t-6">
-  <h2 text="2xl" m="b-4">Thank You!</h2>
-  
-  <div flex="~ gap-4" justify="center">
-    <a href="https://github.com/bylehn/saxophone" bg="blue-50" p="2" rounded hover:bg="blue-100">
-      <carbon:logo-github class="text-xl mr-1 inline" /> bylehn/saxophone
-    </a>
-    
-    <a href="mailto:fbylehn@uchicago.edu" bg="green-50" p="2" rounded hover:bg="green-100">
-      <carbon:email class="text-xl mr-1 inline" /> fbylehn@uchicago.edu
-    </a>
-  </div>
+<div grid="~ cols-1 gap-2" m="t-2" text-center>
+  <img src="/images/group-photo.png" h="50" ml-70 rounded shadow />
+  <p text="sm gray-600">de Pablo Research Group, University of Chicago</p>
 </div>
 
 <!--
-I want to thank my co-authors for their invaluable contributions to this work. Abhishek brought expertise in materials optimization, Cesar helped develop the computational framework, and Professor de Pablo provided guidance throughout the project.
+I'd like to thank my co-authors for their invaluable contributions. Abhishek brought expertise in materials optimization, Cesar helped develop the computational framework, and Professor de Pablo provided guidance throughout the project.
 
-I'm also grateful to the entire De Pablo research group and the Pritzker School of Molecular Engineering for supporting this research.
+I'm excited to announce our open-source Python package called SaXoPhone - the Simulation of Auxetics and Phonics Engine. The name highlights our dual focus on auxetic materials and acoustic properties. Built on JAX for differentiable optimization, it's 100x faster than traditional approaches.
+
+I'm also grateful to the entire De Pablo research group shown in the photo. Their support and collaboration were essential to this project's success.
 
 Thank you for your attention! I'm happy to answer any questions.
 -->
