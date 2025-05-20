@@ -82,15 +82,6 @@ Good morning everyone! I'm Fabian Byléhn, a PhD candidate at PME. Today I'm exc
 -->
 
 ---
-layout: table-of-contents
-hideInToc: true
----
-
-<!--
-Here's what we'll cover in the next 12 minutes. Let's start with understanding what makes these materials special.
--->
-
----
 src: ./pages/challenge.md
 ---
 
