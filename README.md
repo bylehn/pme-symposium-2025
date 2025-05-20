@@ -4,7 +4,7 @@
 
 This presentation is powered by [Slidev](https://github.com/slidevjs/slidev) with [slidev-theme-academic](https://github.com/alexanderdavide/slidev-theme-academic).
 
-![Cover slide](images/cover_v2.png)
+![Cover slide](/images/cover_v2.png)
 
 To run the slide show locally:
 
