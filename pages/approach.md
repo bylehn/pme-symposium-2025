@@ -39,9 +39,9 @@
 $$\mathbf{F} = -\boxed{\color{red}{\nabla}}(E_{total} + \lambda_P P + \lambda_B B)$$
 
 
-<div v-click=after class="mt-6 relative">
+<div v-click class="mt-6 relative">
   
-  <div v-click class="absolute top-0 left-1/2 transform -translate-x-7 -translate-y-10">
+  <div class="absolute top-0 left-1/2 transform -translate-x-7 -translate-y-10">
     <div class="bg-yellow-100 text-red-600 font-semibold px-3 py-1 rounded-lg border border-red-400 shadow-md text-sm">
       The key challenge!
     </div>
