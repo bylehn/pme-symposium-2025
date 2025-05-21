@@ -1,41 +1,62 @@
 ---
 ---
 
-### Our approach: network optimization with AI
+### Our approach: Materials with dual functions
 
-<div class="grid grid-cols-3 gap-4">
-  <div v-click class="flex flex-col items-center">
-    <img src="/images/intro/network_app_1.png" class="w-50 h-auto mb--2" />
-    <figcaption class="text-center">initial network</figcaption>
+<div class="grid grid-cols-3 gap-8 mt-3">
+  <div class="col-span-2 px-4 py-2 bg-blue-50 border-l-4 border-blue-500 rounded">
+    <h4 class="text-lg font-bold">What are we optimizing?</h4>
+    <div class="grid grid-cols-2 gap-3 mt-2">
+      <div>
+        <p class="font-bold">Mechanical: Poisson's ratio</p>
+        <p class="text-sm">When stretched, most materials get thinner in transversal direction</p>
+        <div class="text-xs mt-2">
+          Common materials:
+          <br>• Rubber: +0.5
+          <br>• Steel: +0.3
+          <br>• Cork: ≈0
+          <br>• Auxetic: -0.1 to -1.0
+        </div>
+      </div>
+      <div>
+        <p class="font-bold">Acoustic: Bandgaps</p>
+        <p class="text-sm">Specific frequencies can't pass through</p>
+        <div class="text-xs mt-2">
+          Like a filter that blocks:
+          <br>• Traffic noise (50-1000 Hz)
+          <br>• Machine vibrations
+          <br>• But allows emergency sirens
+        </div>
+      </div>
+    </div>
   </div>
   
-  <div v-click class="flex flex-col items-center">
-    <img src="/images/intro/network_app_2.png" class="w-50 h-auto mb--2" />
-    <figcaption class="text-center">calculate gradients</figcaption>
-  </div>
-  
-  <div v-click class="flex flex-col items-center">
-    <img src="/images/intro/network_app_3.png" class="w-50 h-auto mb--2" />
-    <figcaption class="text-center">update network</figcaption>
+  <div class="">
+    <img src="/images/intro/network_app_1.png" class="w-70 h-auto mb-0" />
   </div>
 </div>
 
-<div v-click class="mt-4 px-4 py-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-  <h4 class="text-lg font-bold">Key ingredient: automatic differentiation with JAX</h4>
-</div>
+$$\mathbf{F} = -\boxed{\color{red}{\nabla}}(E_{total} + \lambda_P P + \lambda_B B)$$
 
-<div v-click class="grid grid-cols-2 gap-4 mt-2">
-  <div class="px-4 pt-2 pb-3 bg-red-50 border-l-4 border-red-500 rounded">
-    <h5 class="text-lg font-bold -mt-1">Traditional method</h5>
-    <p class="text-s">- test one spring at a time ⏱️</p>
-    <p class="text-s">- hours of computation 🐢</p>
+
+<div v-click=after class="mt-6 relative">
+  
+  <div v-click class="absolute top-0 left-1/2 transform -translate-x-7 -translate-y-10">
+    <div class="bg-yellow-100 text-red-600 font-semibold px-3 py-1 rounded-lg border border-red-400 shadow-md text-sm">
+      The key challenge!
+    </div>
   </div>
   
-  <div class="px-4 pt-2 pb-3 bg-green-50 border-l-4 border-green-500 rounded">
-    <h5 class="text-lg font-bold -mt-1">Our method</h5>
-    <p class="text-s">- calculate all gradients at once ⚡</p>
-    <p class="text-s">- minutes of computation 🚀</p>
+  <div class="text-center mt-4 text-sm">
+    <p>Computing this gradient for thousands of parameters is computationally expensive</p>
+    <p>Traditional methods use finite differences — slow and inaccurate</p>
   </div>
+</div>
+
+
+<!-- Footer with next slide indication -->
+<div v-click class="absolute bottom-5 right-10 text-lg text-blue-500">
+  ↓ How do we solve this?
 </div>
 
 <!--
@@ -48,12 +69,50 @@ The right image shows the final optimized network. Notice how it's developed sub
 The key breakthrough is using automatic differentiation from JAX. Traditional methods test one spring at a time - imagine having to tweak thousands of parameters one by one. Our approach optimizes all parameters simultaneously, giving us a 100x speedup. That's the difference between waiting days for results versus getting them in minutes.
 -->
 
+---
+---
 
+### Our solution: network optimization with AI
+
+<div class="grid grid-cols-3 gap-4 mt-2">
+  <div v-click class="flex flex-col items-center">
+    <img src="/images/intro/network_app_1.png" class="w-50 h-auto mb-0" />
+    <figcaption class="text-center text-sm">1. Start with random network</figcaption>
+  </div>
+  
+  <div v-click class="flex flex-col items-center">
+    <img src="/images/intro/network_app_2.png" class="w-50 h-auto mb-0" />
+    <figcaption class="text-center text-sm">2. Calculate gradients with JAX</figcaption>
+  </div>
+  
+  <div v-click class="flex flex-col items-center">
+    <img src="/images/intro/network_app_3.png" class="w-50 h-auto mb-0" />
+    <figcaption class="text-center text-sm">3. Update network structure</figcaption>
+  </div>
+</div>
+
+<div v-click class="mt-6 px-4 py-3 bg-blue-50 border-l-4 border-blue-500 rounded">
+  <h4 class="text-lg font-bold">Key innovation: Automatic differentiation with JAX</h4>
+</div>
+
+<div v-after class="grid grid-cols-2 gap-4 mt-4">
+  <div class="px-4 pt-2 pb-3 bg-red-50 border-l-4 border-red-500 rounded">
+    <h5 class="text-md font-bold">Traditional method</h5>
+    <p class="text-s">- Test one spring at a time ⏱️</p>
+    <p class="text-s">- Hours of computation 🐢</p>
+  </div>
+  
+  <div v-after class="px-4 pt-2 pb-3 bg-green-50 border-l-4 border-green-500 rounded">
+    <h5 class="text-md font-bold">Our method</h5>
+    <p class="text-s">- Calculate all gradients at once ⚡</p>
+    <p class="text-s">- Minutes of computation 🚀</p>
+  </div>
+</div>
 
 ---
 ---
 
-### Dual optimization
+### Individual optimization of properties
 
 <div grid="~ cols-2 gap-2" m="t-2">
 
