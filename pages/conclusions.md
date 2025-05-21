@@ -33,11 +33,10 @@
 </div>
 
 <!--
-This slide summarizes our three key findings. First, we discovered that auxetic networks actually show benefits for acoustic bandgaps, particularly at low frequencies where the sharp angles enhance acoustic properties.
+To summarize our findings: First, auxetic networks show benefits for acoustic bandgaps – their sharp angles enhance acoustic properties, particularly at low frequencies.
 
-Second, we've achieved the first-ever demonstration of simultaneous optimization for both properties. We created networks with specific Poisson's ratios AND acoustic bandgaps at targeted frequencies - something never demonstrated before.
+Second, we've achieved the first-ever demonstration of simultaneous optimization for both properties. We created networks with specific Poisson's ratios AND acoustic bandgaps at targeted frequencies.
 
-Third, we've gained precise control over the Poisson's ratio, reliably targeting values from -0.5 to 0.5. This gives us unprecedented control over mechanical properties and does it 100x faster than previous methods.
-
-These three breakthroughs together open up entirely new possibilities for programmable metamaterials.
+Third, we've gained precise control over the Poisson's ratio, reliably targeting values from -0.5 to 0.5, and we do it 100x faster than previous methods.
+These breakthroughs open entirely new possibilities for programmable metamaterials.
 -->

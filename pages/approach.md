@@ -60,13 +60,11 @@ $$\mathbf{F} = -\boxed{\color{red}{\nabla}}(E_{total} + \lambda_P P + \lambda_B 
 </div>
 
 <!--
-These images show our network optimization approach in action. We start with a disordered network - a 15×15 grid of nodes connected by springs with slight random perturbations. This is our initial playground for optimization.
+Our approach tackles two key properties. Mechanically, we optimize the Poisson's ratio – how materials deform when stretched. Acoustically, we create bandgaps that block specific sound frequencies.
 
-In the middle image, you can see our AI optimization in progress. The red arrows show how the nodes are moving as the algorithm searches for the optimal configuration. This is where JAX's automatic differentiation makes all the difference.
+The real challenge lies in this equation. See the gradient operator highlighted in red? Computing this gradient for thousands of parameters is incredibly expensive using traditional methods like finite differences – it's slow and inaccurate.
 
-The right image shows the final optimized network. Notice how it's developed subtle structural changes that give it the special properties we're targeting. The gray ghost image shows where the network started, highlighting the significant transformation.
-
-The key breakthrough is using automatic differentiation from JAX. Traditional methods test one spring at a time - imagine having to tweak thousands of parameters one by one. Our approach optimizes all parameters simultaneously, giving us a 100x speedup. That's the difference between waiting days for results versus getting them in minutes.
+Our solution leverages automatic differentiation with JAX, which efficiently computes exact gradients for all parameters simultaneously. This makes the previously impossible task of dual optimization feasible.
 -->
 
 ---
@@ -109,6 +107,12 @@ The key breakthrough is using automatic differentiation from JAX. Traditional me
   </div>
 </div>
 
+<!--
+Here's how we implement our solution. We start with a random network of nodes connected by springs. Then, using JAX, we calculate gradients for thousands of parameters simultaneously, efficiently updating the network structure.
+
+The key innovation is automatic differentiation. Traditional methods test one spring at a time, taking hours of computation. Our method calculates all gradients at once, completing in minutes what used to take days. This 100x speedup makes dual property optimization practical for the first time.
+-->
+
 ---
 ---
 
@@ -144,7 +148,10 @@ The key breakthrough is using automatic differentiation from JAX. Traditional me
 </div>
 
 <!--
-The real magic happens when we optimize for both properties simultaneously. We want a specific Poisson's ratio - how the material deforms - AND acoustic bandgaps - frequencies that can't pass through. It's like designing a car that's both fast AND fuel-efficient. Our algorithm balances these competing objectives through a clever loss function that minimizes deviation from both targets.
+Before tackling dual optimization, we verified we could optimize each property individually.
+On the left, you see our auxetic optimization. We can reliably design networks with Poisson ratios ranging from -0.5 to 0.5. The key structural feature for auxetic behavior is the prevalence of sharp angles, particularly around 30 degrees.
+
+On the right is our acoustic optimization. We successfully created networks with bandgaps at specific target frequencies. When compressed, these networks show a significant reduction in vibrational states within the target frequency range.
 -->
 
 ---

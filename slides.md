@@ -78,7 +78,7 @@ Engineering Networks That Control Both Shape and Sound
 </div>
 
 <!--
-Good morning everyone! I'm Fabian Byléhn, a PhD candidate at PME. Today I'm excited to share how we're using AI to design materials that literally break the rules of physics.
+Hi everyone! I'm Fabian Byléhn and I am a PhD candidate here at PME. Today I'm excited to share our work on creating materials that simultaneously control both mechanical deformation and acoustic properties. Our approach uses differentiable optimization to design network structures with previously unachievable dual functionality.
 -->
 
 ---

@@ -33,11 +33,11 @@
 </div>
 
 <!--
-In medical devices, our materials enable revolutionary designs. Take cardiac stents - currently, ultrasound imaging during stent deployment can be challenging because the metal creates acoustic interference. Our auxetic stents would expand properly when deployed while simultaneously dampening specific ultrasound frequencies, providing clearer imaging for doctors. Additionally, these materials could create MRI-compatible implants that provide mechanical support without interfering with magnetic fields, or prosthetic joints that adapt their stiffness based on movement while dampening harmful vibrations that cause loosening over time.
+These dual-function materials could transform multiple industries.
 
-For architecture, imagine building facades that serve dual purposes. During earthquakes, the auxetic properties allow the structure to absorb seismic energy by contracting rather than buckling. Simultaneously, the acoustic bandgaps block specific frequencies - filtering out traffic noise (typically 50-1000 Hz) while allowing emergency sirens (1000-2000 Hz) to pass through. This creates safer, quieter urban environments. Floor systems could provide both vibration isolation from footsteps and sound insulation between floors - solving two major complaints in modern buildings with one material.
+In medicine, imagine smart stents that expand properly while providing clear ultrasound imaging during procedures.
 
-In aerospace, weight is everything. Our materials offer unprecedented weight savings by combining multiple functions. Aircraft engine mounts could use these networks to isolate specific vibration frequencies while adapting to different flight conditions through their auxetic properties. Spacecraft panels could protect sensitive instruments from launch vibrations while maintaining structural integrity. The ability to tune both mechanical and acoustic properties means one material system replaces multiple traditional solutions, potentially saving hundreds of pounds per aircraft.
+In architecture, building materials could both absorb seismic energy during earthquakes and filter specific noise frequencies – blocking traffic noise while allowing emergency sirens through.
 
-These aren't just concepts - they're manufacturable today. 3D printing allows us to create these complex network structures at any scale, from tiny medical implants to large architectural panels. The materials can be metal, polymer, or ceramic depending on the application. Smart manufacturing with our AI system means we can verify properties in real-time and adapt designs for specific needs. With competitive per-unit costs and ROI typically within 2-3 years, adoption barriers are minimal.
+In aerospace, where weight is critical, a single material could replace multiple systems – isolating engine vibrations while adapting to different flight conditions, potentially saving hundreds of pounds per aircraft.
 -->

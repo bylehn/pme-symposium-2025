@@ -58,3 +58,8 @@
   <Footnote :number=2><a href="https://makeagif.com/gif/understanding-poissons-ratio-iHVmOa">makeagif.com</a></Footnote>
   <Footnote :number=3><a href="https://www.nature.com/articles/s41598-020-73299-3">D'Alessandro, L. et al. Sci Rep 10, 16403 (2020) </a></Footnote>
 </Footnotes>
+
+<!--
+Let's start with the fundamental problem we're solving. Most materials behave predictably – they get thinner when stretched, as shown in this normal material, and are characterized by having a positive Poisson ratio. But auxetic materials, shown here, do the opposite – they expand laterally when stretched, giving them a negative Poisson's ratio.
+Separately, acoustic metamaterials can block specific sound frequencies through what we call bandgaps, shown in this third animation. But combining these properties has been a major challenge –  That's the problem we set out to solve. But first, why would we even want to do this? 
+-->

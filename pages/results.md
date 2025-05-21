@@ -6,6 +6,10 @@
 
 <img v-click src="/images/results/figure5.png" class="w-60% ml-40 mt-4">
 
+<!--
+Now for the big question: can we optimize for both properties simultaneously? This figure shows our results. The x-axis shows target Poisson ratios, and the colors represent bandgap success at different frequencies.
+The answer is a clear yes – we can achieve specific Poisson ratios while creating acoustic bandgaps at targeted frequencies. Notice that bandgaps at lower frequencies (ω = 1.0) are consistently harder to establish, regardless of Poisson ratio.
+-->
 
 ---
 ---
@@ -47,7 +51,14 @@
 
 
 <!--
-Our results are remarkable. On the left, you see how different network structures create different behaviors - auxetic networks have sharp angles and re-entrant structures, while normal networks are more open. The surprising discovery? Auxetic networks are actually BETTER at creating acoustic bandgaps, especially at low frequencies. The same sharp angles that enable unusual mechanical behavior also trap sound waves effectively.
+Looking at these three panels, we see a surprising trend: auxetic networks actually offer advantages for bandgap creation.
+Panel A confirms we can reliably target Poisson ratios from -0.5 to 0.5 across different frequencies.
+
+The key finding is in Panel B. Notice how networks with negative Poisson ratios between -0.4 and -0.2 show higher bandgap success rates, especially at frequencies 1.5 and 2.0. For positive ratios above 0.2, we see a decline in performance.
+
+Panel C explains why: auxetic networks feature sharper bond angles (95-98°), while positive Poisson networks have wider angles (101-104°). These sharp configurations create more effective acoustic resonators.
+
+The big takeaway is counterintuitive – the same structural features that create auxetic mechanical behavior also enhance acoustic performance, particularly at lower frequencies where bandgaps are typically harder to achieve. This challenges the conventional assumption that we'd need to trade mechanical properties for acoustic ones.
 -->
 
 
