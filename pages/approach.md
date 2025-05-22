@@ -92,13 +92,13 @@ The key innovation is automatic differentiation. Traditional methods test one sp
 ---
 ---
 
-### Individual optimization of properties
+### Sanity check: **individual** optimization of properties
 
 <div grid="~ cols-2 gap-2" m="t-2">
 
-  <h5 class="font-bold text-lg text-center">Auxetic</h5>
+  <h5 class="font-bold text-lg text-center">Target Poisson ratio</h5>
 
-  <h5 class="font-bold text-lg text-center">Acoustic</h5>
+  <h5 class="font-bold text-lg text-center">Target bandgap frequency</h5>
 
   <div v-click grid="~ cols-2 gap-2" m="t--2">
   
@@ -136,4 +136,4 @@ layout: center
 
 1. Can we optimize for both properties simultaneously?
 
-2. What are the benefits, if any, with auxetic networks on bandgap creation?
+<v-click> 2. What are the benefits, if any, with auxetic networks on bandgap creation? </v-click>

@@ -9,7 +9,7 @@
     class="absolute top-25 left-35 w-70 h-auto"
     >
     <img src="/images/intro/poisson.gif" rounded />
-    <figcaption class="text-center text-sm">Normal material<sup>1</sup>, Poisson ratio > 0</figcaption>
+    <figcaption class="text-center text-sm">Normal material<sup>1</sup>, Poisson ratio ν > 0</figcaption>
 </figure>
 
 <figure
@@ -22,7 +22,7 @@
     class="absolute top-76 left-35 w-70 h-auto transition-all duration-500"
     >
     <img src="/images/intro/auxetic.gif" rounded/>
-    <figcaption class="text-center text-sm">Auxetic material<sup>2</sup>, Poisson ratio < 0</figcaption>
+    <figcaption class="text-center text-sm">Auxetic material<sup>2</sup>, Poisson ratio ν < 0</figcaption>
 </figure>
 
 <figure

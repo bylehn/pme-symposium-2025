@@ -1,7 +1,7 @@
 ---
 ---
 
-### Can we optimize for both properties simultaneously?
+### 1. Can we optimize for both properties simultaneously?
 
 
 <img v-click src="/images/results/figure5.png" class="w-60% ml-40 mt-4">
@@ -14,7 +14,7 @@ The answer is a clear yes – we can achieve specific Poisson ratios while creat
 ---
 ---
 
-### What are the benefits, if any, with auxetic networks on bandgap creation?
+### 2. What are the benefits, if any, with auxetic networks on bandgap creation?
 
 <div class="grid grid-cols-12 gap-4 mt-2">
   <!-- Figure (full width) -->
@@ -23,7 +23,7 @@ The answer is a clear yes – we can achieve specific Poisson ratios while creat
   </div>
   
   <!-- Panel descriptions -->
-  <div class="col-span-4">
+  <div v-click class="col-span-4">
     <div class="bg-blue-50 border-l-4 border-blue-500 p-3 rounded mt--3">
       <h5 class="font-bold">Target vs. Achieved Poisson's Ratio</h5>
       <p class="text-sm mt-1">• Reliable targeting from -0.5 to 0.5</p>
@@ -31,7 +31,7 @@ The answer is a clear yes – we can achieve specific Poisson ratios while creat
     </div>
   </div>
   
-  <div class="col-span-4">
+  <div v-click class="col-span-4">
     <div class="bg-red-50 border-l-4 border-red-500 p-3 rounded mt--3">
       <h5 class="font-bold">Bandgap Success by Poisson's Ratio</h5>
       <p class="text-sm mt-1">• Negative ratios (-0.4 to -0.2) show higher success</p>
@@ -39,7 +39,7 @@ The answer is a clear yes – we can achieve specific Poisson ratios while creat
     </div>
   </div>
   
-  <div class="col-span-4">
+  <div v-click class="col-span-4">
     <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded mt--3">
       <h5 class="font-bold">Angle-Property Relationship</h5>
       <p class="text-sm mt-1">• Negative Poisson ratio → sharp angles (95-98°)</p>
