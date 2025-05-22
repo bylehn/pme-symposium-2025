@@ -9,7 +9,7 @@ fonts:
   mono: Fira Code
 hideInToc: true
 coverAuthor1: Fabian Byléhn
-coverAuthor2: Abhishek K. Sharma  
+coverAuthor2: Abhishek K. Sharma
 coverAuthor3: Cesar A. Castro Rubio
 coverAuthor4: Juan J. de Pablo
 coverAuthorUrl1: https://pme.uchicago.edu/
@@ -17,19 +17,17 @@ coverAuthorUrl2: https://cooper.edu/
 coverAuthorUrl3: https://pme.uchicago.edu/
 coverAuthorUrl4: https://pme.uchicago.edu/
 coverBackgroundUrl: /images/cover_v2.png
-coverBackgroundSource: Background image created with ChatGPT
-coverBackgroundSourceUrl: https://chatgpt.com
 coverDate: May 22, 2025
 themeConfig:
   paginationX: r
   paginationY: t
-  paginationPagesDisabled: [1]
+  paginationPagesDisabled: [ 1 ]
 title: Designing Materials That Break Physics Rules
 info: |
   ## Inverse Design of Multifunctional Networks through Differentiable Optimization
-  
+
   Smart materials with dual superpowers: negative Poisson's ratio and acoustic bandgaps
-  
+
   - [Code](https://github.com/bylehn/saxophone)
   - [Contact](mailto:fbylehn@uchicago.edu)
 ---
@@ -78,7 +76,7 @@ Engineering Networks That Control Both Shape and Sound
 </div>
 
 <!--
-Hi everyone! I'm Fabian Byléhn and I am a PhD candidate here at PME. Today I'm excited to share our work on creating materials that simultaneously control both mechanical deformation and acoustic properties. Our approach uses differentiable optimization to design network structures with previously unachievable dual functionality.
+Hi everyone! I'm Fabian Byléhn and I am a PhD candidate here at PME. Today I'm excited to share our work on creating materials that simultaneously control both mechanical deformation and acoustic properties.
 -->
 
 ---

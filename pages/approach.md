@@ -151,7 +151,7 @@ The key innovation is automatic differentiation. Traditional methods test one sp
 Before tackling dual optimization, we verified we could optimize each property individually.
 On the left, you see our auxetic optimization. We can reliably design networks with Poisson ratios ranging from -0.5 to 0.5. The key structural feature for auxetic behavior is the prevalence of sharp angles, particularly around 30 degrees.
 
-On the right is our acoustic optimization. We successfully created networks with bandgaps at specific target frequencies. When compressed, these networks show a significant reduction in vibrational states within the target frequency range.
+On the right is our acoustic optimization. We successfully created networks with bandgaps at specific target frequencies. When compressed, these networks show a significant reduction in vibrational states within the target frequency range. Notice how compression creates these valleys in the density of states - that's our bandgap forming. The material literally runs out of ways to vibrate at these specific frequencies, blocking sound transmission.
 -->
 
 ---
