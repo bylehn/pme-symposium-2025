@@ -3,61 +3,37 @@
 
 ### Our approach: Materials with dual functions
 
-<div class="grid grid-cols-3 gap-8 mt-3">
-  <div class="col-span-2 px-4 py-2 bg-blue-50 border-l-4 border-blue-500 rounded">
-    <h4 class="text-lg font-bold">What are we optimizing?</h4>
+<div class="grid grid-cols-3 gap-8 mt-18">
+  <div class="col-span-2 px-4 py--5 bg-blue-50 border-l-4 border-blue-500 rounded">
     <div class="grid grid-cols-2 gap-3 mt-2">
       <div>
         <p class="font-bold">Mechanical: Poisson's ratio</p>
-        <p class="text-sm">When stretched, most materials get thinner in transversal direction</p>
-        <div class="text-xs mt-2">
-          Common materials:
-          <br>• Rubber: +0.5
-          <br>• Steel: +0.3
-          <br>• Cork: ≈0
-          <br>• Auxetic: -0.1 to -1.0
-        </div>
+        <p class="text-sm">When compressed, most materials get thicker in transversal direction</p>
       </div>
       <div>
         <p class="font-bold">Acoustic: Bandgaps</p>
         <p class="text-sm">Specific frequencies can't pass through</p>
-        <div class="text-xs mt-2">
-          Like a filter that blocks:
-          <br>• Traffic noise (50-1000 Hz)
-          <br>• Machine vibrations
-          <br>• But allows emergency sirens
-        </div>
       </div>
+      <img src="/images/intro/auxetic_demo.png" w="60%" ml-10 rounded shadow m="b-2" />
+      <img src="/images/intro/acoustic_dos.png" w="70%" rounded shadow m="b-2" />
     </div>
   </div>
-  
-  <div class="">
-    <img src="/images/intro/network_app_1.png" class="w-70 h-auto mb-0" />
-  </div>
-</div>
 
-$$\mathbf{F} = -\boxed{\color{red}{\nabla}}(E_{total} + \lambda_P P + \lambda_B B)$$
+  <div v-click class="col-span-1 px-4 py--5 bg-red-50 border-l-4 border-red-500 rounded">
+  <p class="font-bold">The challenge: 🐢 </p>
+    <img src="/images/intro/network_app_1.png" w="100%" ml-1 mb-4 rounded shadow/>
+  </div>
 
 
-<div v-click class="mt-6 relative">
-  
-  <div class="absolute top-0 left-1/2 transform -translate-x-7 -translate-y-10">
-    <div class="bg-yellow-100 text-red-600 font-semibold px-3 py-1 rounded-lg border border-red-400 shadow-md text-sm">
-      The key challenge!
-    </div>
-  </div>
-  
-  <div class="text-center mt-4 text-sm">
-    <p>Computing this gradient for thousands of parameters is computationally expensive</p>
-    <p>Traditional methods use finite differences — slow and inaccurate</p>
-  </div>
+  <Arrow v-click x1="731" y1="245" x2="710" y2="230" width=1 />
+
+  <Arrow v-click x1="752" y1="246" x2="760" y2="230" width=1 />
+
+  <Arrow v-click x1="777" y1="243" x2="790" y2="255" width=1 />
+
 </div>
 
 
-<!-- Footer with next slide indication -->
-<div v-click class="absolute bottom-5 right-10 text-lg text-blue-500">
-  ↓ How do we solve this?
-</div>
 
 <!--
 Our approach tackles two key properties. Mechanically, we optimize the Poisson's ratio – how materials deform when stretched. Acoustically, we create bandgaps that block specific sound frequencies.
@@ -80,7 +56,7 @@ Our solution leverages automatic differentiation with JAX, which efficiently com
   
   <div v-click class="flex flex-col items-center">
     <img src="/images/intro/network_app_2.png" class="w-50 h-auto mb-0" />
-    <figcaption class="text-center text-sm">2. Calculate gradients with JAX</figcaption>
+    <figcaption class="text-center text-sm">2. Calculate gradients all at once</figcaption>
   </div>
   
   <div v-click class="flex flex-col items-center">
@@ -90,7 +66,7 @@ Our solution leverages automatic differentiation with JAX, which efficiently com
 </div>
 
 <div v-click class="mt-6 px-4 py-3 bg-blue-50 border-l-4 border-blue-500 rounded">
-  <h4 class="text-lg font-bold">Key innovation: Automatic differentiation with JAX</h4>
+  <h4 class="text-lg font-bold">Key ingredient: Automatic differentiation with JAX</h4>
 </div>
 
 <div v-after class="grid grid-cols-2 gap-4 mt-4">
