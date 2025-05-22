@@ -8,11 +8,11 @@
 
 <div class="grid grid-cols-3 gap-4">
   <div v-click>
-    <img src="/images/intro/stent.jpg" class="w-full h-36 object-cover rounded mb-2" />
-    <h4 class="font-bold text-lg">Medical: Smart Stents</h4>
-    <p class="text-sm">Expand properly while providing clear ultrasound imaging</p>
-    <p class="text-xs text-gray-600">• Acoustic shielding during procedures</p>
-    <p class="text-xs text-gray-600">• MRI-compatible implants</p>
+    <img src="/images/intro/car.png" class="w-full h-36 object-cover rounded mb-2" />
+    <h4 class="font-bold text-lg">Safety: Crash Mitigation</h4>
+    <p class="text-sm">Provides cushioning in car crashes while suppressing car engine noise</p>
+    <p class="text-xs text-gray-600">• Auxetic material compresses in transverse directions, providing more cushioning</p>
+    <p class="text-xs text-gray-600">• Acoustic bandgap suppresses engine vibrations</p>
   </div>
   
   <div v-click>
